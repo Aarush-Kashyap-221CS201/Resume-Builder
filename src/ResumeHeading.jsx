@@ -12,9 +12,9 @@ function ResumeHeading({details}){
                 <h1>{`${name}`}</h1>
             </div>
             <div id="resume_personal_box">
-                <div><img src="/location.png" /><h1>{`${location}`}</h1></div>
-                <div><img src="/email.png" /><h1>{`${email}`}</h1></div>
-                <div><img src="/phone.png" /><h1>{`${phoneno}`}</h1></div>
+                <div><img src={import.meta.env.BASE_URL+"/assets/location.png"} /><h1>{`${location}`}</h1></div>
+                <div><img src={import.meta.env.BASE_URL+"/assets/email.png"} /><h1>{`${email}`}</h1></div>
+                <div><img src={import.meta.env.BASE_URL+"/assets/phone.png"} /><h1>{`${phoneno}`}</h1></div>
             </div>
         </div>
     );

@@ -14,7 +14,7 @@ function ExperienceSection({ details, deleteExperience }) {
                         <p>Responsibilities: {entry.responsibilities}</p>
                         <p>From: {entry.dateFrom} To: {entry.dateUntil}</p>
                         <img 
-                            src="/delete.png" 
+                            src={import.meta.env.BASE_URL+"/assets/delete.png"}
                             className="delete_icon"
                             onClick={() => deleteExperience(index)} 
                         />
