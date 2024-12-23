@@ -12,7 +12,7 @@ function EducationSection({details,deleteEducation}){
                         <h3>{entry.schoolName}</h3>
                         <p>{entry.degree} in {entry.fieldOfStudy}</p>
                         <p>Graduation Year: {entry.graduationYear}</p>
-                        <img src={import.meta.env.BASE_URL+"/assets/delete.png"} className="delete_icon" onClick={()=>deleteEducation(index)}/>
+                        <img src={"/assets/delete.png"} className="delete_icon" onClick={()=>deleteEducation(index)}/>
                     </div>)
                 )
             )}
